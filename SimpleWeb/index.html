@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            font-family: 'Times New Roman';
+        }
+
+        body {
+
+            color: coral;
+            background-color: black;
+
+        }
+
+        nav {
+            display: flex;
+            margin: 20px;
+        }
+
+        .search {
+            position: absolute;
+            right: 10%;
+        }
+
+        nav .list ul {
+            display: flex;
+            font-size: 1.5rem;
+        }
+
+        .list {
+            position: absolute;
+            left: 25%;
+        }
+
+        .list ul li {
+            gap: 20px;
+            padding: 20;
+            color: blueviolet;
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(75, 12, 133);
+            font-size: 1.5rem;
+            gap: 20px;
+            padding: 20px;
+
+        }
+
+        button {
+            height: 50px;
+            width: 200px;
+            background-color: coral;
+            color: white;
+            font-weight: bolder;
+            border: 1px solid coral;
+
+
+        }
+
+        .search input {
+            height: 50px;
+            width: 200px;
+            box-sizing: border-box;
+            border: 3px solid coral;
+            background-color: black;
+
+
+        }
+
+        input {
+            background-color: black;
+        }
+
+        .login {
+            position: absolute;
+            right: 20%;
+            top: 15%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            font-size: 2rem;
+            background-color: white;
+            text-align: center;
+
+
+        }
+
+        .login input {
+            border: none;
+            border-bottom: 1px solid coral;
+            height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .login button {
+            border: none;
+            border: none;
+            border-bottom: 1px solid coral;
+            height: 2rem;
+            font-size: 1.2rem;
+            background-color: black;
+            border-radius: 10%;
+        }
+
+
+
+
+        #account {
+            color: white;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            My Web
+        </div>
+        <div class="list">
+
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Service</a></li>
+                <li> <a href="#">Desgin</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text"><span><button>SEARCH</button></span>
+        </div>
+
+
+
+
+    </nav>
+    <div class="main">
+        <div class="content">
+            <H1></H1>
+        </div>
+        <div class="login">
+
+            <div id="box"> login here </div>
+
+            <br>
+            <br><br>
+            <input type="text" placeholder="E-MAIL Adress">
+            <br>
+            <br>
+            <br><br>
+            <input type="text" placeholder="Password">
+            <br><br>
+            <br><br>
+            <button class="btn">login</button>
+            <br><br>
+            <span id="account">dont have account</span>
+            <br> <br> <br> <br>
+
+            <a href="#" style="text-decoration:underline;">Sign Up Here</a>
+            <br>
+            <br>
+            <div style=" color:white;">login with google</div>
+            <div style=" color:white;">login with facebook</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
